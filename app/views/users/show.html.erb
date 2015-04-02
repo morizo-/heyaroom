@@ -1,0 +1,283 @@
+#index-page.index
+  %header{:style => "border-bottom: 1px solid #cbced0;  box-shadow: 0 1px 2px rgba(94, 94, 94, 0.1);"}
+    .col-md-12.portfolio-item{:style => "border-bottom: 1px solid #cbced0;  position: relative;\n                  z-index: 3;\n                  box-shadow: 0 1px 0 white;"}
+      .col-md-2.col-sm-6.portfolio-item{:style => "\n                padding-top: 15px;\n                padding-bottom: 15px;"}
+        %a{:href => "shindan.html"}
+          %h3{:style => "color:#8ECFD3;  margin-top: 15px;\n                margin-bottom: 15px;"} 部屋サーチ
+      .col-md-2.col-sm-6.portfolio-item{:style => "\n                padding-top: 15px;\n                padding-bottom: 15px;"}
+      .col-md-4.col-sm-6.portfolio-item{:style => "\n                padding-top: 15px;\n                padding-bottom: 15px;"}
+      .col-md-2.col-sm-6.portfolio-item{:style => "\n                padding-top: 15px;\n                padding-bottom: 15px;"}
+        %a{:href => "mypage.html"}
+          %img{:src => "#{asset_path "heyaAicon.jpeg"}", :style => "\n                width: 50px;\n                border-radius: 50%;\n                height: 50px;"}/
+      .col-md-2.col-sm-6.portfolio-item{:style => "\n                padding-top: 15px;\n                padding-bottom: 15px;"}
+        %a.btn{"data-toggle" => "modal", :href => "#div1102", :role => "button"}
+          %h3{:style => "color:orange; margin-top: 15px;\n                 margin-bottom: 15px;"} 詳細条件設定
+  %section#portfolio
+    .row
+      .col-lg-3.text-center{:style => "\n                            padding-right: 0px;\n                            border-right-width: 0px;\n                            border-right: 1px solid #cbced0;\n                            border-bottom: 1px solid #cbced0;"}
+        .bg-light-gray
+          %div{:alt => "", :style => "\n                                    min-width: 50px;\n                                    width: 50px;\n                                    background-image: url(#{asset_path "fheya2.jpg"});\n                        background-size: cover;\n                                    background-position: center;\n                                    margin-left:auto;\n                                    margin-right:auto;\n                                    width:10em;\n                                    height: 60px;\n                                    width: 60px;\n                                    border-radius: 50%;"}
+          %a{:href => "/myinfo/#/myinfo"} RM&nbsp;&nbsp;大阪
+          %p
+            %a{:href => "/membership/status"} 無料会員
+        %a{:href => "shindan.html"}
+          %input.button{:style => "margin-bottom: 10px;", :type => "button", :value => "さがす"}
+        %br
+          %a{:href => "iine_index.html"}
+            %input.button{:style => "margin-bottom: 10px;", :type => "button", :value => "イイネ"}
+          %br
+            %a{:href => "message.html"}
+              %input.button{:style => "margin-bottom: 10px;", :type => "button", :value => "メッセージ"}
+      .col-lg-3.text-center
+        .col-md-12.portfolio-item{:style => "margin-top:30px;"}
+          %p{:style => "color:#8ECFD3;"} 項目を選択すると編集できます。
+          .col-md-12.portfolio-item
+            %h3 プロフィール
+            .col-md-6.col-sm-6.portfolio-item
+              %h4{:style => "color:#8ECFD3;"} 国
+              %h4{:style => "color:#8ECFD3;"} 地域
+              %h4{:style => "color:#8ECFD3;"} 居住携帯
+              %h4{:style => "color:#8ECFD3;"} 職業
+              %h4{:style => "color:#8ECFD3;"} 性別
+              %h4{:style => "color:#8ECFD3;"} 生年
+              %h4{:style => "color:#8ECFD3;"} 間取り
+              %h4{:style => "color:#8ECFD3;"} 広さ
+            .col-md-6.col-sm-6.portfolio-item
+              %h4 日本
+              %h4 大阪
+              %h4 実家暮らし
+              %h4 大学生
+              %h4 男性
+              %h4 1993年
+              %h4 1k
+              %h4 8畳
+          .col-md-12.portfolio-item
+            .col-md-12.col-sm-6.portfolio-item
+              %h3 足跡
+              %p 過去一週間の足跡
+            .col-md-12.col-sm-6.portfolio-item{:style => "  margin-bottom: 5px;"}
+              #item-css.col-md-2.col-sm-6.portfolio-item
+                %a.portfolio-link{"data-toggle" => "modal", :href => "http://kagu350.com/goods/g62078.html", :target => "_blank"}
+                  .img-responsive{:alt => "", :style => " max-height: 50px;\n    height: 50px;                                          min-width: 50px;\n                                            width: 50px;\n                                            background-image: url(#{asset_path "fheya2.jpg"});\n                                            background-size: cover;\n                                            background-position: center;"}
+              .col-md-5.col-sm-6.portfolio-item
+                %p{:style => "margin-bottom: 0px;\n                                        margin-top: 10px;"} 20歳兵庫
+              .col-md-5.col-sm-6.portfolio-item
+                %p{:style => "margin-bottom: 0px;\n                                         margin-top: 10px;"} 3/14
+            .col-md-12.col-sm-6.portfolio-item{:style => "  margin-bottom: 5px;"}
+              #item-css.col-md-2.col-sm-6.portfolio-item
+                %a.portfolio-link{"data-toggle" => "modal", :href => "http://kagu350.com/goods/g62078.html", :target => "_blank"}
+                  .img-responsive{:alt => "", :style => " max-height: 50px;\n    height: 50px;                                          min-width: 50px;\n                                            width: 50px;\n                                            background-image: url(#{asset_path "fheya2.jpg"});\n                                            background-size: cover;\n                                            background-position: center;"}
+              .col-md-5.col-sm-6.portfolio-item
+                %p{:style => "margin-bottom: 0px;\n                                        margin-top: 10px;"} 20歳兵庫
+              .col-md-5.col-sm-6.portfolio-item
+                %p{:style => "margin-bottom: 0px;\n                                         margin-top: 10px;"} 3/14
+            .col-md-12.col-sm-6.portfolio-item{:style => "  margin-bottom: 5px;"}
+              #item-css.col-md-2.col-sm-6.portfolio-item
+                %a.portfolio-link{"data-toggle" => "modal", :href => "http://kagu350.com/goods/g62078.html", :target => "_blank"}
+                  .img-responsive{:alt => "", :style => " max-height: 50px;\n    height: 50px;                                          min-width: 50px;\n                                            width: 50px;\n                                            background-image: url(#{asset_path "fheya2.jpg"});\n                                            background-size: cover;\n                                            background-position: center;"}
+              .col-md-5.col-sm-6.portfolio-item
+                %p{:style => "margin-bottom: 0px;\n                                        margin-top: 10px;"} 20歳兵庫
+              .col-md-5.col-sm-6.portfolio-item
+                %p{:style => "margin-bottom: 0px;\n                                         margin-top: 10px;"} 3/14
+            .col-md-12.col-sm-6.portfolio-item{:style => "  margin-bottom: 5px;"}
+              #item-css.col-md-2.col-sm-6.portfolio-item
+                %a.portfolio-link{"data-toggle" => "modal", :href => "http://kagu350.com/goods/g62078.html", :target => "_blank"}
+                  .img-responsive{:alt => "", :style => " max-height: 50px;\n    height: 50px;                                          min-width: 50px;\n                                            width: 50px;\n                                            background-image: url(#{asset_path "fheya2.jpg"});\n                                            background-size: cover;\n                                            background-position: center;"}
+              .col-md-5.col-sm-6.portfolio-item
+                %p{:style => "margin-bottom: 0px;\n                                        margin-top: 10px;"} 20歳兵庫
+              .col-md-5.col-sm-6.portfolio-item
+                %p{:style => "margin-bottom: 0px;\n                                         margin-top: 10px;"} 3/14
+      .col-lg-6.text-center
+        .col-md-12.portfolio-item{:style => "margin-top:20px;"}
+          .col-md-12.portfolio-item{:style => "  padding-right: 150px; text-align:right;"}
+            %a.btn{"data-toggle" => "modal", :href => "#div1101", :role => "button"}
+              %h4{:style => "color:orange; "} 写真編集
+          .col-md-12.col-sm-6.portfolio-item{:style => " margin-bottom: 50px;"}
+            %a.portfolio-link{"data-toggle" => "modal", :href => "http://kagu350.com/goods/g62078.html", :target => "_blank"}
+              #henkou.portfolio-hover{:style => "height: 400px;"}
+                .portfolio-hover-content
+                  %i.fa.fa-plus.fa-3x
+              #henkou-responsive.img-responsive{:alt => "", :style => "height: 400px; background-image: url(#{asset_path "fheya2.jpg"});\n background-size: cover; background-position: 50% 50%;"}
+          .col-md-3.col-sm-6.portfolio-item
+            %a.portfolio-link{"data-toggle" => "modal", :href => "http://kagu350.com/goods/g62078.html", :target => "_blank"}
+              .portfolio-hover.sub{:style => "height: 169px;"}
+                .portfolio-hover-content
+                  %i.fa.fa-plus.fa-3x
+              .img-responsive.sub{:alt => "", :style => "height: 169px; background-image: url(#{asset_path "fheya2.jpg"});\n background-size: cover; background-position: 50% 50%;"}
+          .col-md-3.col-sm-6.portfolio-item
+            %a.portfolio-link{"data-toggle" => "modal", :href => "http://kagu350.com/goods/g62078.html", :target => "_blank"}
+              .portfolio-hover.sub{:style => "height: 169px;"}
+                .portfolio-hover-content
+                  %i.fa.fa-plus.fa-3x
+              .img-responsive.sub{:alt => "", :style => "height: 169px; background-image: url(#{asset_path "fheya2.jpg"});\n background-size: cover; background-position: 50% 50%;"}
+          .col-md-3.col-sm-6.portfolio-item
+            %a.portfolio-link{"data-toggle" => "modal", :href => "http://kagu350.com/goods/g62078.html", :target => "_blank"}
+              .portfolio-hover.sub{:style => "height: 169px;"}
+                .portfolio-hover-content
+                  %i.fa.fa-plus.fa-3x
+              .img-responsive.sub{:alt => "", :style => "height: 169px; background-image: url(#{asset_path "fheya2.jpg"});\n background-size: cover; background-position: 50% 50%;"}
+          .col-md-3.col-sm-6.portfolio-item
+            %a.portfolio-link{"data-toggle" => "modal", :href => "http://kagu350.com/goods/g62078.html", :target => "_blank"}
+              .portfolio-hover.sub{:style => "height: 169px;"}
+                .portfolio-hover-content
+                  %i.fa.fa-plus.fa-3x
+              .img-responsive.sub{:alt => "", :style => "height: 169px; background-image: url(#{asset_path "fheya2.jpg"});\n background-size: cover; background-position: 50% 50%;"}
+  %footer
+    .container
+      .row
+        .col-md-4
+          %span.copyright Copyright © Ryota Morizawa 2014
+        .col-md-4
+          %ul.list-inline.social-buttons
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-twitter
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-facebook
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-linkedin
+        .col-md-4
+          %ul.list-inline.quicklinks
+            %li
+              %a{:href => "#"} Privacy Policy
+            %li
+              %a{:href => "#"} Terms of Use
+
+/ Modal
+#div1101.modal.fade
+  / Modal本体
+  .modal-dialog
+    / Modalダイアログ部分
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+        / closeボタン
+        %h4.modal-title Modal title
+      .modal-body{:style => "\n                            height: 630px;\n                            "}
+        %h4 全体写真
+        %button.btn.btn-primary{:type => "button"} ファイルから選択
+        %br
+          %img{:src => "#{asset_path "fheya2.jpg"}", :style => "  width: 100px;\n                          height: 100px;\n                          border-radius: 50%;\n                          margin-top: 10px;\n                          margin-right: 10px;"}
+            %br
+              %h4 お気に入り写真
+              %button.btn.btn-primary{:type => "button"} ファイルから選択
+              %br
+                .col-lg-3
+                  %img{:src => "#{asset_path "fheya2.jpg"}", :style => "  width: 100px;\n                          height: 100px;\n                          border-radius: 50%;\n                          margin-top: 10px;\n                          margin-right: 10px;"}
+                    %button.btn.btn-primary{:type => "button"} 削除する
+                .col-lg-3
+                  %img{:src => "#{asset_path "fheya2.jpg"}", :style => "  width: 100px;\n                          height: 100px;\n                          border-radius: 50%;\n                          margin-top: 10px;\n                          margin-right: 10px;"}
+                    %button.btn.btn-primary{:type => "button"} 削除する
+                .col-lg-3
+                  %img{:src => "#{asset_path "fheya2.jpg"}", :style => "  width: 100px;\n                          height: 100px;\n                          border-radius: 50%;\n                          margin-top: 10px;\n                          margin-right: 10px;"}
+                    %button.btn.btn-primary{:type => "button"} 削除する
+                .col-lg-3
+                  %img{:src => "#{asset_path "fheya2.jpg"}", :style => "  width: 100px;\n                          height: 100px;\n                          border-radius: 50%;\n                          margin-top: 10px;\n                          margin-right: 10px;"}
+                    %button.btn.btn-primary{:type => "button"} 削除する
+      .modal-footer
+        .col-lg-12
+          %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+          %button.btn.btn-primary{:type => "button"} Save changes
+    / /.modal-content
+  / /.modal-dialog
+/ /.modal
+/ Modal
+#div1102.modal.fade
+  / Modal本体
+  .modal-dialog
+    / Modalダイアログ部分
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+        / closeボタン
+        %h4.modal-title Modal title
+      .modal-body{:style => "height: 200px;"}
+        .col-md-12.portfolio-item{:style => "text-align:center;"}
+          %h4 プロフィールから探す
+        .col-md-6.portfolio-item
+          .form-group{:style => "text-align: center;"}
+            %select
+              %option 大学生
+              %option 高校生
+              %option 中学生
+              %option 小学生
+              %option IT企業
+              %option 金融
+              %option 不動産
+              %option 自営業
+        .col-md-6.portfolio-item
+          .form-group{:style => "text-align: center;"}
+            %select
+              %option 大学生
+              %option 高校生
+              %option 中学生
+              %option 小学生
+              %option IT企業
+              %option 金融
+              %option 不動産
+              %option 自営業
+        .col-md-6.portfolio-item
+          .form-group{:style => "text-align: center;"}
+            %select
+              %option 大学生
+              %option 高校生
+              %option 中学生
+              %option 小学生
+              %option IT企業
+              %option 金融
+              %option 不動産
+              %option 自営業
+        .col-md-6.portfolio-item
+          .form-group{:style => "text-align: center;"}
+            %select
+              %option 大学生
+              %option 高校生
+              %option 中学生
+              %option 小学生
+              %option IT企業
+              %option 金融
+              %option 不動産
+              %option 自営業
+        .col-md-6.portfolio-item
+          .form-group{:style => "text-align: center;"}
+            %select
+              %option 大学生
+              %option 高校生
+              %option 中学生
+              %option 小学生
+              %option IT企業
+              %option 金融
+              %option 不動産
+              %option 自営業
+        .col-md-6.portfolio-item
+          .form-group{:style => "text-align: center;"}
+            %select
+              %option 大学生
+              %option 高校生
+              %option 中学生
+              %option 小学生
+              %option IT企業
+              %option 金融
+              %option 不動産
+              %option 自営業
+      .modal-footer
+        .col-lg-12
+          %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+          %button.btn.btn-primary{:type => "button"} Save changes
+    / /.modal-content
+  / /.modal-dialog
+/ /.modal
+/ Portfolio Grid Section
+/ Custom Theme JavaScript
+:javascript
+  $(function(){
+      $(window).on("resize load", function(){
+          $("#henkou.portfolio-hover").css({height: $($("#henkou.portfolio-hover")[0]).width() + "px"})
+          $("#henkou-responsive.img-responsive").css({height: $($("#henkou.portfolio-hover")[0]).width() + "px"})
+          $(".sub.portfolio-hover").css({height: $($(".sub.portfolio-hover")[0]).width() + "px"})
+          $(".sub.img-responsive").css({height: $($(".sub.portfolio-hover")[0]).width() + "px"})
+      })
+
+  })
